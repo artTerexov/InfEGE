@@ -1,20 +1,25 @@
-# def remake(num: int, base: int) -> str:
-#     buff = ""
-#     while num // base != 0:
-#         buff += str(num % base)
-#         num = num // base
-#     buff += str(num)
-#     return buff[::-1]
+result = 0
+for i in range(1, 20):
+    result += i * (i + 1)
+    print(i, "*", i + 1, "+", end=" ")
+print(result)
+
+# A = []
+# for i in range(100):
+#     if i % 2 == 1:
+#         A.append(i)
+# print(A)
+
+# count = 0
+#
+# def f(n):
+#     global count
+#     count += 1
+#     print('*')
+#     if n > 0:
+#       f(n // 2)
+#       f(n // 3)
 #
 #
-# n = 5 * 216 ** 1156 - 4 * 36 ** 1147 + 6 ** 1153 - 875
-# t = 6
-#
-# g = remake(n, t)
-# print(g.count("5") - g.count("0"))
-#
-#
-#
-# # B = range(25, 41)
-# #
-# # C = range(12, 34)
+# f(8)
+# print(count)

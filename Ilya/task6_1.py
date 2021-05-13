@@ -4,13 +4,14 @@
 
 count = 0
 
-for i in range(0, 100):
+for i in range(1, 1000):
     d = i
     n = 20
     s = 40
     if (s + n) < d:
         continue
     while s + n < d:
+        print(i)
         s = s - 10
         n = n - 20
     if n > 0:

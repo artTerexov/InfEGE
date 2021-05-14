@@ -13,3 +13,4 @@ buff = buff[::-1]
 print(buff.count("1"))
 
 
+

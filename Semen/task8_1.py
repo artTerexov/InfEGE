@@ -10,6 +10,7 @@ a = set(itertools.product(s, repeat=5))
 count = 0
 
 for i in a:
+    print(i)
     if i.count("А") <= 1:
         count += 1
 

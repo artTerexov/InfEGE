@@ -1,10 +1,62 @@
-# Рассматривается множество целых чисел, принадлежащих отрезку [1170; 8367],
-# которые делятся на 3 или на 7 и не делятся на 11, 13, 17 и 19.
-# Найдите количество таких чисел и минимальное из них. В ответе
-# запишите два числа через пробел: сначала количество, затем минимальное число.
+# with open('24-5.txt') as f:
+#     s = f.read()
+#
+# # s = '()(())()'
+# # o = s.count('(')
+# # index = 1
+# # while s.count('(') >= o - 10000:
+# #     s = s[1:]
+# #     index += 1
+# #     if s.count('(') < o - 10000:
+# #         index += s.find('(')
+#
+# # print(index)
+#
+# count = 0
+# for i in range(len(s) - 1):
+#     if s[i] == "(" and count == 9999:
+#         index = i + 1
+#     if s[i] == "(" and s[i + 1] == ")":
+#         count += 1
+#
+# print(index)
 
-buff = []
-for i in range(1170, 8368):
-    if (i % 3 == 0 or i % 7 == 0) and i % 11 != 0 and i % 13 != 0 and i % 17 != 0 and i % 19 != 0:
-        buff.append(i)
-print(len(buff), min(buff))
+# def deliteli(n):
+#     array = []
+#     if n ** 0.5 % 1 != 0:
+#         return 0
+#     for i in range(1, int(n ** 0.5) + 1):
+#         if n % i == 0:
+#             array.append(i)
+#             if not(n // i in array):
+#                 array.append(n // i)
+#         if len(array) > 5:
+#             break
+#     if len(set(array)) == 5:
+#         array.sort()
+#         print(array[-2], array[-1])
+#         return 1
+#
+#
+# for j in range(1820348, 2880927 + 1):
+#     if deliteli(j):
+#         continue
+
+with open('27-18b.txt') as f:
+    s = f.read().strip().split('\n')
+
+
+size = s[0]
+s.pop(0)
+generator = [int(i) for i in s]
+count = 0
+for j in range(0, len(generator) - 1):
+    for h in range(j + 1, j + 5):
+        if h > len(generator) - 1:
+            break
+        proiz = generator[j] * generator[h]
+        summa = generator[j] + generator[h]
+        if proiz % 13 == 0 and summa % 2 != 0:
+            count += 1
+
+print(count)

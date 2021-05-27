@@ -58,32 +58,34 @@
 #         summa = generator[j] + generator[h]
 #         if proiz % 13 == 0 and summa % 2 != 0:
 #             count += 1
+# #
+# # print(count)
 #
-# print(count)
-
-
-import string
-import time
-
-def is_pangram(s):
-    template = {i for i in range(65, 91)}
-    buff = set()
-    s = s.upper()
-    for i in s:
-        if 65 <= ord(i) <= 90:
-            buff.add(ord(i))
-    if template == buff:
-        return 1
-    else:
-        return 0
-
+#
+# import string
+# import time
+#
 # def is_pangram(s):
-#     return set(string.ascii_lowercase) <= set(s.lower())
+#     template = {i for i in range(65, 91)}
+#     buff = set()
+#     s = s.upper()
+#     for i in s:
+#         if 65 <= ord(i) <= 90:
+#             buff.add(ord(i))
+#     if template == buff:
+#         return 1
+#     else:
+#         return 0
+#
+# # def is_pangram(s):
+# #     return set(string.ascii_lowercase) <= set(s.lower())
+#
+# start_time = time.time()
+#
+# pangram = "The quick, brown fox jumps over the lazy dog! The quick, brown fox jumps over the lazy dog! The quick, brown fox jumps over the lazy dog! The quick, brown fox jumps over the lazy dog! The quick, brown fox jumps over the lazy dog! The quick, brown fox jumps over the lazy dog! The quick, brown fox jumps over the lazy dog!"
+#
+# print(is_pangram(pangram))
+# print("--- %s seconds ---" % (time.time() - start_time))
+# all
 
-start_time = time.time()
-
-pangram = "The quick, brown fox jumps over the lazy dog! The quick, brown fox jumps over the lazy dog! The quick, brown fox jumps over the lazy dog! The quick, brown fox jumps over the lazy dog! The quick, brown fox jumps over the lazy dog! The quick, brown fox jumps over the lazy dog! The quick, brown fox jumps over the lazy dog!"
-
-print(is_pangram(pangram))
-print("--- %s seconds ---" % (time.time() - start_time))
-all
+print(2 ** 4)

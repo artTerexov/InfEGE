@@ -7,8 +7,10 @@ task3.pop(task3.index(14))
 task3.pop(task3.index(2))
 task3.pop(task3.index(15))
 task3.pop(task3.index(12))
-task4 = [1, 2, 18]
-task5 = [1, 2, 3, 6, 7, 8, 11, 12, 13, 14, 16, 17]
+task3.pop(task3.index(8))
+task3.pop(task3.index(7))
+task4 = [1]
+task5 = [1, 2, 3, 6, 8, 11, 13, 14, 16, 17]
 
 r3 = random.randint(0, len(task3) - 1)
 r4 = random.randint(0, len(task4) - 1)

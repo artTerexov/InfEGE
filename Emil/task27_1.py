@@ -52,37 +52,3 @@ if summa % 16 == 15:
     print(summa)
 else:
     print(summa + dMin[15 - (summa % 16)])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# for pair in generator:
-#     numOne = int(pair.split()[0])
-#     numTwo = int(pair.split()[1])
-#     summa += min(numOne, numTwo)
-#     d = abs(numTwo - numOne)
-#     r = d % D
-#     if r > 0:
-#         dMinNew = dMin
-#         for k in range(1, D):
-#             r0 = (r + k) % D
-#             dMinNew[r0] = min(d + dMin[k], dMinNew[r0])
-#         dMinNew[r] = min(d, dMinNew[r])
-#         dMin = dMinNew
-# if summa % D == 15:
-#     print(summa)
-# else:
-#     print(summa + dMin[15 - (summa % D)])
-#
-# print(633 % 16)

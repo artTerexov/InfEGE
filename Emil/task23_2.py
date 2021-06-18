@@ -5,3 +5,15 @@
 #
 # Определите число, для получения которого из числа 5 существует 34 программы
 
+def calc(n):
+    if n == x:
+        return 1
+    if n > x:
+        return 0
+    return calc(n + 2) + calc(n + 5)
+
+
+for x in range(6, 100):
+    if calc(5) == 34:
+        print(x)
+        break

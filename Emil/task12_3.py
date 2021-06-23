@@ -14,7 +14,6 @@ for i in range(1, 100):
     for j in range(1, 100):
         for n in range(1, 100):
             s = "0" + "2" * i + "1" * j + "3" * n
-
             while "01" in s or "02" in s or "03" in s:
                 s = s.replace("01", "2302", 1)
                 s = s.replace("02", "10", 1)

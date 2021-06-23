@@ -16,7 +16,7 @@ def calc(n, flag):
     if n == 21:
         return 0
     if n == 16:
-        flag = 1
+        flag += 1
     return calc(n + 1, flag) + calc(n * 4, flag) + calc(n * 3, flag)
 
 

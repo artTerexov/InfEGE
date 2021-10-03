@@ -9,6 +9,8 @@ while num // base > 0:
     num = num // base
 buff += str(num)
 buff = buff[::-1]
+
+
 count = 0
 for i in "012345":
     if buff.count(i) != 0:

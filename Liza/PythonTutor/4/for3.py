@@ -8,9 +8,7 @@
 a = int(input())
 b = int(input())
 
-# if b % 2 == 0:
-#     for i in range(a, b, -2):
-#         print(i)
-# else:
-#     for i in range(a, b - 1, -2):
-#         print(i)
+
+for i in range(a, b - 1, -1):
+    if i % 2 != 0:
+        print(i)

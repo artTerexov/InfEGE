@@ -1,4 +1,10 @@
-print(bin(178)[2:])
-print(oct(178)[2:])
+s = "ABDEFGHUI"
 
-print(int("01001110", 2))
+# 1 способ (с помощью индексов)
+# for i in range(len(s)):
+#     if (i + 1) % 3 != 0:
+#         print(s[i], end="")
+#
+# # 2 способ
+# for i in s:
+#     print(i)

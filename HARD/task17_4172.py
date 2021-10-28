@@ -20,7 +20,6 @@ def F(n):
         else:
             return t2 + 2 * n
 
-
 sum = 0
 for i in range(40, 51):
     sum += F(i)

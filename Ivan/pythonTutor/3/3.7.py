@@ -1,0 +1,5 @@
+a = int(input())
+b = int(input())
+c = int(input())
+d = c * (100 * a + b)
+print(d // 100, d % 100)

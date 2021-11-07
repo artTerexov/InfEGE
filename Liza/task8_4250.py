@@ -5,7 +5,7 @@
 import itertools
 
 s = "ОНИКС"
-a = itertools.product(s, repeat=6)
+a = set(itertools.product(s, repeat=6))
 count = 0
 
 for i in a:

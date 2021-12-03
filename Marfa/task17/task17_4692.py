@@ -9,4 +9,3 @@ with open("files/4692.txt") as f:
     s = f.read().strip().split("\n")
 
 s = [int(i) for i in s]
-

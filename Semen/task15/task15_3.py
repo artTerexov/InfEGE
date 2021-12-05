@@ -6,6 +6,7 @@
 def dell(n, m):
     return n % m == 0
 
+
 for A in range(1, 1000):
     flag = True
     for x in range(1, 1000):

@@ -5,10 +5,9 @@ num = (729 ** 41 - 81 ** 16) * (729 ** 15 + 9 ** 5)
 base = 9
 buff = ""
 
-while num // base > 0:
+while num != 0:
     buff += str(num % base)
     num //= base
-buff += str(num)
 buff = buff[::-1]
 
 

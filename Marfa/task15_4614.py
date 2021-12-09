@@ -7,18 +7,6 @@ P = [i for i in range(5, 111)]
 Q = [i for i in range(15, 43)]
 R = [i for i in range(25, 71)]
 
-# for x1 in range(1, 200):
-#     for x2 in range(x1 + 1, 200):
-#         A = [i for i in range(x1, x2 + 1)]
-#         flag = True
-#         for x in range(1, 1000):
-#             if ((x in P) <= (x in Q)) or ((x not in A) <= (x not in R)) == 0:
-#                 flag = False
-#                 break
-#         if flag:
-#             print(x2 - x1)
-#             break
-
 l = list()
 for x1 in range(1, 200):
     for x2 in range(x1 + 1, 200):
@@ -30,6 +18,8 @@ for x1 in range(1, 200):
                 flag = False
                 break
         if flag:
-            l.append(x2 - x1 + 1)
+            if x2 - x1 == 27:
+                print(x1, x2)
+            l.append(x2 - x1)
 
 print(min(l))

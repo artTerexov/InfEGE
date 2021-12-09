@@ -18,3 +18,5 @@ for x1 in range(1, 100):
         if flag:
             buff.append(x2 - x1)
 print(max(buff))
+
+"↑→↓←"

@@ -9,11 +9,15 @@
 
 with open("files/4269.txt") as f:
     s = f.read().strip().split("\n")
-
 s = [int(i) for i in s]
+
 result = []
 for i in range(len(s) - 1):
+    num_1 = s[i]
+    num_2 = s[i + 1]
+    num_3 = s[i + 2]
     if (s[i] % 7 == 0 and s[i + 1] % 17 != 0) or (s[i] % 17 != 0 and s[i + 1] % 7 == 0):
         result.append(s[i] + s[i + 1])
+    s.index()
 
 print(len(result), min(result))

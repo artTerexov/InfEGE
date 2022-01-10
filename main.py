@@ -1,13 +1,3 @@
-# x = int(input())
-# n = 987
-# while (x + n) < 354261:
-#     x = x - 5
-#     n = n + 8
-# print(n)    # 231
+age = 24
 
-# [231000; 231999]
-# 231000 - 987 = 230013
-# 231013 / 8 = 28752
-#
-
-# print(987 + 28752 * 8)
+print("My name is Artem and %i years %i old" % (age, age))

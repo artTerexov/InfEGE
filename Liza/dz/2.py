@@ -1,8 +1,7 @@
-# (a ∧ b) ∨ (a ∧ ¬c)
-print('a b c')
-for a in 0, 1:
-    for b in 0, 1:
-        for c in 0, 1:
-            F = (a and b) or (a and (not c))
-            if F:
-                print(a, b, c)
+# ¬(x ≡ y → z)
+print('x y z')
+for x in 0, 1:
+    for y in 0, 1:
+        for z in 0, 1:
+            F = not (x == y <= z)
+            print(x, y, z, F)

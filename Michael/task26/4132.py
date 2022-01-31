@@ -15,26 +15,23 @@ nums = sorted([int(num) for num in s][3:], reverse=True)
 
 disks = [0 for i in range(number_of_disks)]
 local_folder = []
+d = 0
+c = -1
 
-while len(nums) != 0:
-    for d in range(len(disks)):
-        for num in nums:
-            if disks[d] + num <= disk_space:
-                disks[d] += num
-                nums.pop(0)
-            elif d != len(disks)-1:
-                break
-            elif d == len(disks)-1:
-                flag = True
-                for k in range(len(disks)):
-                    if disks[k] + num <= disk_space:
-                        flag = False
-                        disks[d] += num
-                        nums.pop(0)
-                        break
-                if flag:
-                    local_folder.append(num)
-                    nums.pop(0)
-                break
+for num in nums:
+    while True:
+        if disks[d % number_of_disks] + num <= disk_space:
+            disks[d % number_of_disks] += num
+            d += 1
+            c = -1
+            break
+        elif c == -1:
+            c = d % number_of_disks
+        elif d % number_of_disks == c:
+            local_folder.append(num)
+            c = -1
+            d = 0
+            break
+        d += 1
 
 print(sum(local_folder), len(local_folder))

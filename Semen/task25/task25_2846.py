@@ -2,6 +2,11 @@
 # которые представляют собой произведение трёх различных простых делителей, оканчивающихся на одну и ту же цифру.
 # В ответе запишите количество таких чисел и их среднее арифметическое (только целую часть числа)
 
+import time
+
+start = time.time()
+
+
 def isSimple(num):
     for k in range(2, int(num ** 0.5) + 1):
         if num % k == 0:
@@ -25,4 +30,5 @@ for i in range(356712, 420901 + 1):
 
 print(len(result), sum(result) // len(result))
 
+print(time.time() - start)
 

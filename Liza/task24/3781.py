@@ -1,3 +1,4 @@
+
 with open('files/3781.txt') as f:
     s = f.read().strip().split('\n')
 

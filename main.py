@@ -1,7 +1,5 @@
+j = 'CAFFCFACFACFDFD'
 
-a = ["парин", "парун", "пырым"]
-c = 'аыеёэияоую'
-
-result = [sum(j in c for j in i) for i in a]
-
-print(result)
+print(j.rfind('C'))
+# for i in range(len(j)):
+#     rast =

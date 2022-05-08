@@ -6,5 +6,7 @@
 with open('24-179.txt') as f:
     s = f.read()
 
-print(s.count('CBCBC'), s.count('CBDBC'), s.count('CBEBC'))
+print(s.count('CBCBC') + s.count('CBDBC') + s.count('CBEBC'))
 
+# С5603
+# CBCBCBC

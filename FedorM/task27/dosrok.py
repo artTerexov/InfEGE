@@ -16,4 +16,3 @@ for j in range(len(d)):
 print(pos)
 
 a = []
-a.

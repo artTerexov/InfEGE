@@ -14,8 +14,6 @@ def f(a, b, c, m, f1, f2):
 print("Программа для решение теории игр")
 
 
-
-
 for b in range(1, 41):
     if f(4, b, 0, 2, any, (lambda x, y: x == y)) == 1:
         print("№ 19 ->", b)

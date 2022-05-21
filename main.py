@@ -1,13 +1,2 @@
-int()
-str()
-float()
-list()
-set()
-bool()
-
-a = 12
-print(a * a)
-# str -> int
-# b = int(a)
-# print(type(b))
-
+print((80 * 2 ** 13 * 1.15) / (486 * 720))
+print((80 * 2 ** 13) / (486 * 720 * 0.85))

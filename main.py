@@ -1,2 +1,13 @@
-print(int('000100101000101', 2))
-print(oct(2373)[2:])
+int()
+str()
+float()
+list()
+set()
+bool()
+
+a = 12
+print(a * a)
+# str -> int
+# b = int(a)
+# print(type(b))
+

@@ -8,17 +8,17 @@ def f(a, c, m):
     if c > m:
         return 0
     h = []
-    for i in range(1, 166):
+    for i in range(2, 166):
         if a * i <= 166:
             h.append(f(a * i, c + 1, m))
         else:
             break
     h.extend([f(a + 10, c + 1, m), f(a + 2, c + 1, m)])
-    return any(h) if (c + 1) % 2 == m % 2 else all(h)
+    return any(h) if (c + 1) % 2 == m % 2 else any(h)
 
 
 for i in range(1, 166):
-    if f(i, 0, 3):
+    if f(i, 0, 1):
         print(i)
 
 # 19 -> 4

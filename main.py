@@ -1,2 +1,5 @@
-print((80 * 2 ** 13 * 1.15) / (486 * 720))
-print((80 * 2 ** 13) / (486 * 720 * 0.85))
+for i in range(10):
+    for j in range(10):
+        a = int('12345' + str(i) + '6' + str(j) + '8')
+        if a % 17 == 0:
+            print(a, a // 17)

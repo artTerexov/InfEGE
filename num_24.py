@@ -1,10 +1,11 @@
-
-with open("files/24 .txt") as f:
+with open("24.txt") as f:
     s = f.read().strip()
 
 w = s.split("A")[1:-1]
-mx = 0
-for a, b, c in zip(w, w[1:], w[2:]):
-    if a == b == c:
-        mx = max(mx, len("A" + a + "A" + b + "A" + c + "A"))
-print(mx)
+
+buff = []
+for i in range(len(w) - 2):
+    if w[i] == w[i + 1] == w[i + 2]:
+        buff.append(len(w[i]) + len(w[i + 1]) + len(w[i + 2]) + 4)
+
+print(max(buff))

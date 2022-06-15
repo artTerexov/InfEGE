@@ -6,6 +6,7 @@ s.sort()
 count = 0
 countN = 0
 t = 0
+print(s)
 
 for i in range(len(s) - 1):
     if s[i][0] == s[i + 1][0]:

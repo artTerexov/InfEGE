@@ -8,11 +8,7 @@
 P = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20}
 Q = {5, 10, 15, 20, 25, 30, 35, 40, 45, 50}
 
-# A1 = P & Q
-# A2 = P | Q
-# A3 = P ^ Q
-
-for A in P & Q, P | Q, P ^ Q:
+for A in P & Q, P | Q, P ^ Q, Q ^ P:
     flag = True
     for x in range(-1000, 1000):
         if (((x in A) <= (x in P)) or ((x not in Q) <= (x not in A))) == 0:

@@ -1,1 +1,3 @@
-print(int('201345', 6))
+print(bin(49)[2:])
+
+print(int('10000', 2))

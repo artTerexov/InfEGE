@@ -1,3 +1,2 @@
-print(bin(49)[2:])
+import turtle
 
-print(int('10000', 2))

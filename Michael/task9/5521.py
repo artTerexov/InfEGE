@@ -20,7 +20,7 @@ def average(a: list) -> bool:
     return sum(rep) / len(rep) <= sum(notRep)
 
 
-with open('5521') as f:
+with open('files/5521') as f:
     s = [[int(j) for j in i.split()] for i in f.readlines()]
 
 

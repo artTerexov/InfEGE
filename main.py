@@ -1,8 +1,3 @@
-def rec(n):
-    # if n > 100:
-    #     return
-    print(n)
-    rec(n + 1)
-
-
-rec(4)
+for i in range(100):
+    for j in range(100):
+        print()

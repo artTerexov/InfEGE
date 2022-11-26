@@ -1,7 +1,7 @@
 # count = 0
 # for i in range(1, 100000):
 #     s = i
-#     s //= 15
+#     s //= task15
 #     n = 14
 #     while s <285:
 #         if (s+n) % 9 == 0:
@@ -27,15 +27,15 @@
 #         s = s.replace('888', '55', 1)
 #     print(300+i, s, s.count('5'))
 
-# s = 11 * 15**65+18*15**38-14*15**17+19*15**11+18338
+# s = 11 * task15**65+18*task15**38-14*task15**17+19*task15**11+18338
 # c = ''
 # b = ['A', 'B', 'C', 'D', 'E']
 # while s:
-#     if s % 15 < 10:
-#         c = str(s % 15) + c
+#     if s % task15 < 10:
+#         c = str(s % task15) + c
 #     else:
-#         c = b[(s % 15) - 15] + c
-#     s //= 15
+#         c = b[(s % task15) - task15] + c
+#     s //= task15
 # print(c)
 # print(len(set(c)))
 

@@ -1,3 +1,2 @@
-for i in range(100):
-    for j in range(100):
-        print()
+print(bin(30)[2:])
+print(int('11110000', 2))

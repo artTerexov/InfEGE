@@ -9,8 +9,3 @@ for x in (0, 1):
                 if F == 0:
                     print(x, y, z, w)
 
-
-# Проверка
-# x, z, w, y = 1, 0, 1, 1
-# F = ((z <= y) and ((not x) <= w)) <= ((z == w) or (y and (not x)))
-# print(F)

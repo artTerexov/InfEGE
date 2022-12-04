@@ -11,5 +11,5 @@ print(num)
 num = hex(41)[2:]
 print(num)
 # Перевод из ЛЮБОЙ в 10ую сс
-num = int('10000', 2)
+num = int('1000', 2)
 print(num)

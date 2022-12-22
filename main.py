@@ -1,10 +1,12 @@
-# for N in range(6, 7):
-#     n = bin(N)[:2]
-#     if n.count('1') % 2 == 0:
-#         n = '10' + n[2:] + '0'
-#     else:
-#         n = '11' + n[2:] + '1'
-#     R = int(n, 2)
-#     if R < 35:
-#         print(N)
-print(7 & 13)
+# a = 'babababa'
+a = 'babbbaba'
+
+c = 0
+cmax = 0
+for i in range(0, len(a) - 1, 2):
+    if a[i] == 'b' and a[i + 1] == 'a':
+        c += 1
+    else:
+        cmax = max(cmax, c)
+        c = 0
+print(c)

@@ -1,2 +1,13 @@
+import time
 
-print((210 * 2 ** 13) / (1024 * 120) - 7)
+start_time = time.time()
+
+a = 1000000000
+c = 0
+
+for i in range(a):
+    c += 1
+
+print(c)
+
+print("--- %s seconds ---" % (time.time() - start_time))

@@ -2,7 +2,6 @@ import math
 
 with open('files/demo_B.txt') as f:
     s = [[int(j) for j in i.split()[::-1]] for i in f.readlines()]
-s.pop(0)
 # s.sort(reverse=True)
 minCost = []
 for j in range(len(s)):

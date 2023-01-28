@@ -1,8 +1,16 @@
 with open('files/demo') as f:
-    s = [[j for j in i.split()] for i in f.readlines()]
+    s = [[int(j) for j in i.replace(';', ' ').split()] for i in f.readlines()]
 
-time = 0
 
-for process in s:
-    if int(process[2]) == 0:
-        time += int(process[1])
+buff = {0: 0}
+
+
+for i in s:
+    if all(sub in buff for sub in i[2:]):
+        buff[i[0]] = i[1] + max(buff[sub] for sub in i[2:])
+
+print(max(buff.values()))
+
+
+# id процесса: время
+# время ->

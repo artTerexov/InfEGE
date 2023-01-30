@@ -10,7 +10,3 @@ for i in s:
         buff[i[0]] = i[1] + max(buff[sub] for sub in i[2:])
 
 print(max(buff.values()))
-
-
-# id процесса: время
-# время ->

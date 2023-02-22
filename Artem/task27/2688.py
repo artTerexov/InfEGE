@@ -1,5 +1,5 @@
 with open('files/2685_b.txt') as f:
-    s = [[int(i.split()[0]), int(i.split()[1])]for i in f.readlines()]
+    s = [[int(i.split()[0]), int(i.split()[1])] for i in f.readlines()]
 
 maxTotal = 0
 D = 8
@@ -20,8 +20,6 @@ for i in s:
 if maxTotal % D != 3:
     e = maxTotal % D
     print(e)
-
-
 
 print('A = ', 13130 - 95)
 print('B = ', 40382437 - 18)

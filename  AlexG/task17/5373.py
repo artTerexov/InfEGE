@@ -3,7 +3,7 @@ with open('files/5373.txt') as f:
 
 
 minNumber = 10 ** 10
-result = []
+result = list()
 
 for i in s:
     if i > 0 and i % 19 == 0:
@@ -16,3 +16,4 @@ for i in range(len(s) - 1):
 print(len(result), max(result))
 
 # 4984 696
+

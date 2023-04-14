@@ -1,7 +1,3 @@
-from itertools import combinations
-
-
-
 # Удалили первую строчку из файла
 
 with open('files/2660_test.txt') as f:

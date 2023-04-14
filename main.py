@@ -1,10 +1,7 @@
-for n in range(4, 5):
-    s = '3' + '5' * n
-    pass
-    s = "246785386534653"
-    mount = 0
-    for i in "246785386534653":
-        mount += int(i)
-    if mount == 27:
-        print(n)
-
+a = int(input())
+b = int(input())
+count = 0
+for i in range(a, b + 1):
+    if i % 2 != 0:
+        count += 1
+print(count)

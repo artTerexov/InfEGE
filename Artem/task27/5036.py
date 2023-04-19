@@ -9,7 +9,7 @@ def optimal(s, n):
     s1 = 0
     for i in range(n):
         r = min(i, n - i)
-        s1 += s[i] * (r * 2) ** 2
+        s1 += s[i] * r
 
     result = float('inf')
     pointNumber = 0
@@ -36,7 +36,7 @@ def nonOptimal(a):
     return h
 
 
-with open('files/5036_B.txt') as f:
+with open('files/5036_test.txt') as f:
     file = [int(i) for i in f.readlines()]
 nn = file.pop(0)
 

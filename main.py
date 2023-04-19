@@ -1,4 +1,7 @@
-a = [2, 4, 1, 5, 33, -2]
-a.sort()
-
-print(a[-3:])
+a = int(input())
+b = int(input())
+count = 0
+for i in range(a, b + 1):
+    if i % 2 != 0:
+        count += 1
+print(count)
